@@ -1,25 +1,267 @@
+:root{
+  --elevation0: none;
+  --elevation1: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --elevation2: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  --elevation3: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  --elevation4: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --elevation5: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  --elevation6: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  --elevation7: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
+  --elevation8: 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.2);
+  --elevation9: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+  --spacing1: 0.146rem;
+  --spacing2: 0.236rem;
+  --spacing3: 0.382rem;
+  --spacing4: 0.618rem;
+  --spacing5: 1rem;
+  --spacing6: 1.618rem;
+  --spacing7: 2.618rem;
+  --spacing8: 4.235rem;
+  --spacing9: 6.854rem;
+  --spacing10: 11.089rem;
+  --spacing11: 17.942rem;
+  --spacing12: 29.03rem;
+
+  --fontSize0: 0.625rem;
+  --fontSize1: 0.8125rem;
+  --fontSize2: 1rem;
+  --fontSize3: 1.25rem;
+  --fontSize4: 1.625rem;
+  --fontSize5: 2.0625rem;
+  --fontSize6: 2.625rem;
+  --fontSize7: 4.226rem;
+  --fontSize8: 6.804rem;
+  --fontSize9: 10.95rem;
+
+
+  --primaryFont: "Alegreya", serif;
+  --secondaryFont: "Alegreya SC", sans-serif;
+
+  --gray1: hsl(0, 0%, 90%);
+  --gray2: hsl(0, 0%, 70%);
+  --gray3: hsl(0, 0%, 50%);
+  --gray4: hsl(0, 0%, 30%);
+  --gray5: hsl(0, 0%, 10%);
+
+  --redHue: 0;
+  --red: #120004;
+  --red1: hsl(var(--redHue), 100%, 50%);
+  --red2: hsl(var(--redHue), 80%, 50%);
+  --red3: hsl(var(--redHue), 60%, 50%);
+  --red4: hsl(var(--redHue), 40%, 50%);
+  --red5: hsl(var(--redHue), 20%, 50%);
+  --redLight1: hsl(var(--redHue), 100%, 70%);
+  --redLight2: hsl(var(--redHue), 80%, 70%);
+  --redLight3: hsl(var(--redHue), 60%, 70%);
+  --redLight4: hsl(var(--redHue), 40%, 70%);
+  --redLight5: hsl(var(--redHue), 20%, 70%);
+  --redLighter1: hsl(var(--redHue), 100%, 90%);
+  --redLighter2: hsl(var(--redHue), 80%, 90%);
+  --redLighter3: hsl(var(--redHue), 60%, 90%);
+  --redLighter4: hsl(var(--redHue), 40%, 90%);
+  --redLighter5: hsl(var(--redHue), 20%, 90%);
+  --redDark1: hsl(var(--redHue), 100%, 30%);
+  --redDark2: hsl(var(--redHue), 80%, 30%);
+  --redDark3: hsl(var(--redHue), 60%, 30%);
+  --redDark4: hsl(var(--redHue), 40%, 30%);
+  --redDark5: hsl(var(--redHue), 20%, 30%);
+  --redDarker1: hsl(var(--redHue), 100%, 5%);
+  --redDarker2: hsl(var(--redHue), 80%, 5%);
+  --redDarker3: hsl(var(--redHue), 60%, 5%);
+  --redDarker4: hsl(var(--redHue), 40%, 5%);
+  --redDarker5: hsl(var(--redHue), 20%, 5%);
+  --redHsl: 44, 80%, 70%;
+  --redHsl1: var(--redHue), 100%, 50%;
+  --redHsl2: var(--redHue), 80%, 50%;
+  --redHsl3: var(--redHue), 60%, 50%;
+  --redHsl4: var(--redHue), 40%, 50%;
+  --redHsl5: var(--redHue), 20%, 50%;
+  --redHslLight1: var(--redHue), 100%, 70%;
+  --redHslLight2: var(--redHue), 80%, 70%;
+  --redHslLight3: var(--redHue), 60%, 70%;
+  --redHslLight4: var(--redHue), 40%, 70%;
+  --redHslLight5: var(--redHue), 20%, 70%;
+  --redHslLighter1: var(--redHue), 100%, 90%;
+  --redHslLighter2: var(--redHue), 80%, 90%;
+  --redHslLighter3: var(--redHue), 60%, 90%;
+  --redHslLighter4: var(--redHue), 40%, 90%;
+  --redHslLighter5: var(--redHue), 20%, 90%;
+  --redHslDark1: var(--redHue), 100%, 30%;
+  --redHslDark2: var(--redHue), 80%, 30%;
+  --redHslDark3: var(--redHue), 60%, 30%;
+  --redHslDark4: var(--redHue), 40%, 30%;
+  --redHslDark5: var(--redHue), 20%, 30%;
+  --redHslDarker1: var(--redHue), 100%, 5%;
+  --redHslDarker2: var(--redHue), 80%, 5%;
+  --redHslDarker3: var(--redHue), 60%, 5%;
+  --redHslDarker4: var(--redHue), 40%, 5%;
+  --redHslDarker5: var(--redHue), 20%, 5%;
+
+}
+
+html{
+  font-size: 16px;
+}
 body    {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: #eeeeee;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;  
 }
 
-header, h1  {
-    font-size: 300%;
-    text-align: center;
-    padding: 1px;
-    margin-top: 0px;
+main{
+  background-color: var(--red);
+  max-width: 1000px;
 }
 
-.section    {
-    background-color:rgba(128, 0, 32, 0.199);
-    border: 2px solid rgba(128, 0, 0, 0.301);
-    padding: 5px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 15px;
-    padding-left: 2%;
-    padding-right: 2%;
+section{
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing7) var(--spacing8);
+  box-sizing: border-box;
 }
+@media (max-width: 900px){
+  section{
+    padding: var(--spacing7) var(--spacing6);
+  }
+}
+@media (max-width: 500px){
+  section{
+    padding: var(--spacing7) var(--spacing5);
+  }
+}
+
+
+h1{
+  font-size: var(--fontSize6);
+  margin: 0 0 var(--spacing5) 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 900px){
+  h1{
+    font-size: var(--fontSize5);
+  }
+}
+@media (max-width: 700px){
+  h1{
+    font-size: var(--fontSize4);
+  }
+}
+
+h2{
+  font-size: var(--fontSize5);
+  margin: 0 0 var(--spacing5) 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+h3{
+  font-size: var(--fontSize3);
+  margin: 0 0 var(--spacing4) 0;
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: center;
+}
+
+section .inner{
+  width: 100%;
+  max-width: 1200px;
+  /*border: 1px solid white; just to show you the edges of things to make it easier to get spacing right*/
+  border: 1px solid rgba(128, 0, 0, 0.295);
+  padding: 1%;
+}
+
+
+
+.coreDraftMechanic p{
+  margin: 0;
+}
+
+.coreDraftMechanic p:not(:first-child){
+  margin-top: var(--spacing5);
+}
+
+
+.cardColors .cards{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--spacing5);
+}
+@media (max-width: 1000px){
+  .cardColors .cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #unknown{
+    grid-column: 2;
+  }
+}
+@media (max-width: 600px){
+  .cardColors .cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card{
+    grid-column: span 2;
+  }
+  #unknown{
+    grid-column: 2/4;
+  }
+}
+@media (max-width: 400px){
+  .cardColors .cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #unknown{
+    grid-column: 1;
+  }
+}
+
+.cardColors .card{
+  min-width: 4rem;
+  min-height: 7rem;
+  position: relative;
+}
+
+.cardColors .card .background{
+  width: 100%;
+  height: 100%;
+}
+
+.cardColors .card .body{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--fontSize2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding: var(--spacing4) var(--spacing2);
+}
+
+.cardColors .card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000000 0%, #00000000 50%, #00000077 100%);
+  z-index: 0;
+}
+
+
+
+
+
 
 .horizontal {
     display: flex;
@@ -59,17 +301,8 @@ header, h1  {
 }
 
 #grey     {
-    background-color:grey
-}
-
-h1          {
-    padding: 0px;
-    margin-top: 0px;
-}
-
-h2          {
-    text-align: center;
-    margin-top: 0px;
+    background-color:grey;
+    grid-column: 1/-1;
 }
 
 
@@ -85,7 +318,7 @@ h2          {
 
 p       {
     font-family:sans-serif;
-    font-size: 150%;
+    font-size: var(--fontSize2);
     margin-top: 2px;
     margin-left: 1px;
     margin-right: 1px;
@@ -93,8 +326,8 @@ p       {
 
 li      {
     font-family:sans-serif;
-    font-size: 155%;
     margin-top: 10px;
+    font-size: var(--fontSize2);
     margin-bottom: 15px;
 }
 
@@ -115,9 +348,11 @@ img     {
             padding: 10%;
             margin-left: 33%;
             margin-right: 33%;
+            display: flex;
+            justify-content: center;
         }
 
         .horizontal {
-            display:block
+            display:block;
         }
     }

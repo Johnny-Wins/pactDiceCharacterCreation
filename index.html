@@ -2,141 +2,158 @@
 <html lang="en">
 
 <head>
-<title>Pact Dice Character Creation Cheatsheet</title>
-<meta charset="utf-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="cheatSheet.css">
-<!--[if lt IE 9]>
+  <title>Pact Dice Character Creation Cheatsheet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cheatSheet.css">
+  <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
 </head>
 
 <body>
-    <h1>Pact Dice Character Creation Cheat-Sheet/TLDR</h1>
 
-    <main>
 
+  <main>
+    <section class="header">
+      <div class="inner">
+        <h1>Pact Dice Character Creation Cheat-Sheet/TLDR</h1>
+      </div>
+    </section>
+    <section class="coreDraftMechanic">
+      <div class="inner">
+        <h2>Core Draft Mechanic</h2>
+        <p>You will be selecting cards from pre-arranged tables in order to build a character with them.</p>
+
+        <p>Some cards have better quality than others, and you will compete with other players to get the best ones.</p>
+
+        <p>There are multiple categories, so it's possible for everyone to be the best at different things- or for one person to end up with all the best cards, and everyone else to end up with very weak characters.</p>
+      </div>
+    </section>
+
+    <section class="cardColors">
+      <div class="inner">
         <div class="section">
-            <h1>Core Draft Mechanic</h1>
-            <p>You will be selecting cards from pre-arranged tables in order to build a character with them.</p>
+          <h2>Card Color/Quality</h2>
 
-            <p>Some cards have better quality than others, and you will compete with other players to get the best ones.</p>
-                
-            <p>There are multiple categories, so it's possible for everyone to be the best at different things- or for one person to end up with all the best cards, and everyone else to end up with very weak characters.</p>
-        </div>
-
-        <div class="section">
-            <h1>Card Color/Quality</h1>
-
-            <div class="horizontal">
-                <div class="whiteBox">
-                    <div id="yellow" class="colorBox"></div>
-                    <p>Supreme</p>
-                </div>
-
-                <div class="whiteBox">
-                    <div id="green" class="colorBox"></div>
-                    <p>Good</p>
-                </div>     
-
-                <div class="whiteBox">
-                    <div id="blue" class="colorBox"></div>
-                    <p>Moderate</p>
-                </div class="whiteBox">     
-                    
-                <div class="whiteBox">
-                    <div id="purple" class="colorBox"></div>
-                    <p>Poor</p>
-                </div>     
-                    
-                <div class="whiteBox">
-                    <div id="brown" class="colorBox"></div>
-                    <p>Awful</p>
-                </div class="whiteBox">     
-                    
-                <div class="whiteBox">
-                    <div id="black" class="colorBox"></div>
-                    <p>Worst</p>
-                </div>     
-                    
-                <div class="whiteBox">
-                    <div id="grey" class="colorBox"></div>
-                    <p>Unknown</p>
-                </div>     
-            </div>
-        </div>
-
-        <div class="section">
-
-            <h1>Table Types</h1>
-
-            <div class="horizontal">
-                <div>
-                    <h2>Puissance</h2>
-                    <p>Determines how much raw power your spells will have</p>
-                </div>
-
-                <div>
-                    <h2>Access</h2>
-                    <p>Makes your spells simple or uncostly to use</p>
-                </div>
-
-                <div>
-                    <h2>Longevity</h2>
-                    <p>Gives your spells more duration and durability against counter-measures</p>
-                </div>
-                
-                <div>
-                    <h2>Executions</h2>
-                    <p>Makes your spells more versatile</p>
-                </div>
-                
-                <div>
-                    <h2>Schools</h2>
-                    <p>Gives you precedence in picking your magical expertise</p>
-                </div>
-                
-                <div>
-                    <h2>Family</h2>
-                    <p>Determines all other aspects of your character- background, stats, wealth...</p>
-                </div>         
-            </div>   
-        </div>
-
-        <div class="section">
-
-            <h1>The Draft, Step-by-Step</h1>
-
-            <ol>
-                <li> Cards are laid out to form the six tables; each table contains 3 Supremes (15%), 5 Goods (25%), 5 Poors (25%), 5 Awfuls (25%), and 2 (10%) Worsts, shuffled into random positions.</li>
-                <li>All players simultaneously and secretly select a row or column that they want from one table of their choice.</li>
-                <li>If everyone selected different rows/columns from each table, they each pick one card from their selection to keep. If there are cards that multiple players selected, those players Clash.</li>
-                <li>All cards that got taken are replaced with face-down cards from the "Unknown" deck. The Unknown deck has a distribution of 1 Supreme (5%), 2 Goods (10%), 3 Moderates (15%), 4 Poors (20%), 5 Awfuls (25%), and 5 Worsts (25%).</li>
-                <li>Repeat steps 2 through 5 until each player has five cards from each table.</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h1>Clashes</h1>
-
-            <p>First, players get a chance to make a deal. In a deal you may propose any possible split of cards (for example P1 taking a supreme card, and P2 taking the remaining four).</p>
-            
-            <p>Players draw Unknown cards equal to the number they gave to their opponent, so they will always end up taking five no matter what.</p>
-                
-            <p>Deals may also include promises about what kind of character you'll play, or what relationships they'll have to other characters.</p>
-
-            <p>If the players can't or won't agree to a deal, they go to a Dilemma, which resembles the prisoner's Dilemma, with players having the chance to get white marks (perks and advantages) or black marks (flaws and detrimental traits).</p>
-
-            <div class="center">
-                <img src="fiveCard.PNG">
+          <div class="cards">
+            <div class="card">
+              <div id="yellow" class="background"></div>
+              <div class="body">Supreme</div>
             </div>
 
-            <div class="center">
-                <img src="oneCard.PNG">
+            <div class="card">
+              <div id="green" class="background"></div>
+              <div class="body">Good</div>
             </div>
+
+            <div class="card">
+              <div id="blue" class="background"></div>
+              <div class="body">Moderate</div>
+            </div>
+
+            <div class="card">
+              <div id="purple" class="background"></div>
+              <div class="body">Poor</div>
+            </div>
+
+            <div class="card">
+              <div id="brown" class="background"></div>
+              <div class="body">Awful</div>
+            </div>
+
+            <div class="card">
+              <div id="black" class="background"></div>
+              <div class="body">Worst</div>
+            </div>
+
+            <div class="card" id="unknown">
+              <div id="grey" class="background"></div>
+              <div class="body">Unknown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="inner">
+
+        <h2>Table Types</h2>
+
+        <div class="horizontal">
+          <div>
+            <h3>Puissance</h3>
+            <p>Determines how much raw power your spells will have</p>
+          </div>
+
+          <div>
+            <h3>Access</h3>
+            <p>Makes your spells simple or uncostly to use</p>
+          </div>
+
+          <div>
+            <h3>Longevity</h3>
+            <p>Gives your spells more duration and durability against counter-measures</p>
+          </div>
+
+          <div>
+            <h3>Executions</h3>
+            <p>Makes your spells more versatile</p>
+          </div>
+
+          <div>
+            <h3>Schools</h3>
+            <p>Gives you precedence in picking your magical expertise</p>
+          </div>
+
+          <div>
+            <h3>Family</h3>
+            <p>Determines all other aspects of your character- background, stats, wealth...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="inner">
+
+        <h2>The Draft, Step-by-Step</h2>
+
+        <ol>
+          <li> Cards are laid out to form the six tables; each table contains 3 Supremes (12%), 5 Goods (20%), 5 Moderates (20%) 5 Poors (20%), 5 Awfuls (20%), and 2 (8%) Worsts, shuffled into random positions. The middle card of every table is always a Moderate.</li>
+          <li>All players simultaneously and secretly select a row or column that they want from one table of their choice.</li>
+
+          <div class="center">
+            <img src="gridExample.PNG">
+          </div>
+
+          <li>If everyone selected different rows/columns from each table, they each get the cards they picked. If there are cards that multiple players selected, those players <b>Clash.</b></li>
+          <li>All cards that got taken are replaced with face-down cards from the "Unknown" deck. The Unknown deck has a distribution of 1 Supreme (5%), 2 Goods (10%), 3 Moderates (15%), 4 Poors (20%), 5 Awfuls (25%), and 5 Worsts (25%). The average quality of an unknown card is 1.8; better than a Worst, but not as good as an Awful.</li>
+          <li>Repeat steps 2 through 5 until each player has five cards from each table.</li>
+        </ol>
+      </div>
+    </section>
+    <section>
+      <div class="inner">
+        <h2>Clashes</h2>
+
+        <p>First, players get a chance to make a deal. In a deal you may propose any possible split of cards (for example P1 taking a supreme card, and P2 taking the remaining four).</p>
+
+        <p>Players draw Unknown cards equal to the number they gave to their opponent, so they will always end up taking five no matter what.</p>
+
+        <p>Deals may also include promises about what kind of character you'll play, or what relationships they'll have to other characters.</p>
+
+        <p>If the players can't or won't agree to a deal, they go to a Dilemma, which resembles the Prisoner's Dilemma, with players having the chance to get white marks (perks and advantages) or black marks (flaws and detrimental traits).</p>
+
+        <div class="center">
+          <img src="fiveCard.PNG">
         </div>
 
-    </main>
+        <div class="center">
+          <img src="oneCard.PNG">
+        </div>
+      </div>
+    </section>
+    <section>
+  </main>
 </body>
