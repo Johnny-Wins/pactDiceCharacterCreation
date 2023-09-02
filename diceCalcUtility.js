@@ -379,11 +379,11 @@ function diceCheck(character,spellField,spellDifficulty,...rolls){ //Example Inp
     dabbleBonuses.forEach(function(currDabbleBonus){
 
         bonusedRolls = rollObjects[rolltracker].baseRoll.map(function(currentDie){
-            return currentDie + currDabbleBonus.tier;
+            return currentDie + currDabbleBonus.tier - spellDifficulty;
         })
 
         bonusedOptions = rollObjects[rolltracker].knowledgeRolls.map(function(currentDie){
-            return currentDie + currDabbleBonus.tier;
+            return currentDie + currDabbleBonus.tier - spellDifficulty;
         })
         
 
