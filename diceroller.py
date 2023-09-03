@@ -28,19 +28,24 @@ def main():
 
         improvedRange = sorted(baseRange)
 
+        learningRange.sort()
+
         exhaustion = learning
 
         for z in range(learning):
             for a in range(len(improvedRange)):
-                if exhaustion > z and learningRange[z] > a:
+                usedCheck = 0
+                if exhaustion > z and learningRange[z] > improvedRange[a]:
                     exhaustion = exhaustion - 1
+                    usedCheck = 1
                     improvedRange[a] = learningRange[z]
+                if a == (len(improvedRange)) and usedCheck == 0:
+                    exhaustion = exhaustion - 1
                     
         
 
         if checkRangeOfDice(improvedRange,6):
             results[5] += 1
-            print("We got a perfect result!\n\n\n\n\n")
         else:
             if checkRangeOfDice(improvedRange,5):
                 results[4] += 1
