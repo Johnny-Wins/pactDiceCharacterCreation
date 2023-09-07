@@ -34,12 +34,24 @@ def main():
 
     if rollType == "Total":
         flatBonus = int(input("What number are you adding to the overall result (if any)?)\n"))
+        threshhold = 0
     if rollType == "Success":
         threshhold = int(input("What roll does a die need to reach (or exceed) in order to count as a success?\n"))
+        flatBonus = 0
+
+    rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold)
 
 
+def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
     simCount = 100000
     runLog = []
+
+    if rollType == 1:
+        rollType = "Total"
+    if rollType == 2:
+        rollType = "Success"
+
+    print("Entering rollsomedice...")
 
 
     #initiate simulation
@@ -60,6 +72,9 @@ def main():
         runLog.append(currentRun)
 
     #Display results
+
+    print("Exited simploop...")
+    print("Rolltype is ",rollType)
     
     if rollType == "Total":
         sum = 0
