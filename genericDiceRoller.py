@@ -51,8 +51,6 @@ def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
     if rollType == 2:
         rollType = "Success"
 
-    print("Entering rollsomedice...")
-
 
     #initiate simulation
     for x in range(simCount):
@@ -72,9 +70,6 @@ def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
         runLog.append(currentRun)
 
     #Display results
-
-    print("Exited simploop...")
-    print("Rolltype is ",rollType)
     
     if rollType == "Total":
         sum = 0
@@ -90,6 +85,22 @@ def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
             sum += run.numOfSuccesses(threshhold)
         average = sum / simCount
         print("The average number of successes is ",average)
+
+        rangeOfDice = []
+
+        for x in range(diceNum):
+            rangeOfDice.append(x + 1)
+
+        for dice in rangeOfDice: #this loop will go once for each die in each roll
+            goodRun = 0
+            for run in runLog:
+                if run.numOfSuccesses(threshhold) >= dice:
+                    goodRun += 1
+            average = goodRun / simCount
+            averagePercent = round((average * 100),3)
+            print(averagePercent,"percent of runs have at least",dice,"succesful dice.")
+
+            
         
 
     
@@ -114,5 +125,3 @@ def checkRangeOfDice(dieArray,query):
     else:
         return False
 
-
-main()
