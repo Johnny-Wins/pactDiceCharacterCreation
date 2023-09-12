@@ -43,7 +43,7 @@ def main():
 
 
 def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
-    simCount = 100000
+    simCount = 10000000
     runLog = []
 
     if rollType == 1:
@@ -97,7 +97,7 @@ def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
                 if run.numOfSuccesses(threshhold) >= dice:
                     goodRun += 1
             average = goodRun / simCount
-            averagePercent = round((average * 100),3)
+            averagePercent = round((average * 100),2)
             print(averagePercent,"percent of runs have at least",dice,"succesful dice.")
 
             
@@ -125,3 +125,32 @@ def checkRangeOfDice(dieArray,query):
     else:
         return False
 
+print("\n\nRolling 1d6")
+rollSomeDice(2,1,6,0,0,5)
+
+print("\n\nRolling 2d6")
+rollSomeDice(2,2,6,0,0,5)
+
+print("\n\nRolling 3d6")
+rollSomeDice(2,3,6,0,0,5)
+
+print("\n\nRolling 4d6")
+rollSomeDice(2,4,6,0,0,5)
+
+print("\n\nRolling 5d6")
+rollSomeDice(2,5,6,0,0,5)
+
+print("\n\nRolling 6d6")
+rollSomeDice(2,6,6,0,0,5)
+
+print("\n\nRolling 7d6")
+rollSomeDice(2,7,6,0,0,5)
+
+print("\n\nRolling 8d6")
+rollSomeDice(2,8,6,0,0,5)
+
+print("\n\nRolling 9d6")
+rollSomeDice(2,9,6,0,0,5)
+
+print("\n\nRolling 10d6")
+rollSomeDice(2,10,6,0,0,5)
