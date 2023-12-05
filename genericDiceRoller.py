@@ -43,7 +43,7 @@ def main():
 
 
 def rollSomeDice(rollType,diceNum,diceType,dieBonus,flatBonus,threshhold):
-    simCount = 10000000
+    simCount = 100000
     runLog = []
 
     if rollType == 1:
@@ -124,33 +124,19 @@ def checkRangeOfDice(dieArray,query):
         return True
     else:
         return False
+    
+def d6():
+    return random.randrange(1, 7)
 
-print("\n\nRolling 1d6")
-rollSomeDice(2,1,6,0,0,5)
+def makeTroikan(numTroikans):
+    
+    for x in range(numTroikans):
+        print("Character Number ",x + 1)
+        print("Skill: ", (3 + (random.randrange(1, 4))))
+        print("Stamina: ", d6() + d6() + 12)
+        print("Luck: ",d6() + 6)
+        print("Background: ",d6(),d6(),sep='')
+        print("Starting Silver: ",d6() + d6(),"\n")
 
-print("\n\nRolling 2d6")
-rollSomeDice(2,2,6,0,0,5)
 
-print("\n\nRolling 3d6")
-rollSomeDice(2,3,6,0,0,5)
-
-print("\n\nRolling 4d6")
-rollSomeDice(2,4,6,0,0,5)
-
-print("\n\nRolling 5d6")
-rollSomeDice(2,5,6,0,0,5)
-
-print("\n\nRolling 6d6")
-rollSomeDice(2,6,6,0,0,5)
-
-print("\n\nRolling 7d6")
-rollSomeDice(2,7,6,0,0,5)
-
-print("\n\nRolling 8d6")
-rollSomeDice(2,8,6,0,0,5)
-
-print("\n\nRolling 9d6")
-rollSomeDice(2,9,6,0,0,5)
-
-print("\n\nRolling 10d6")
-rollSomeDice(2,10,6,0,0,5)
+makeTroikan(2)
